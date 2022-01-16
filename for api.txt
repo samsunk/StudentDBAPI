@@ -1,0 +1,19 @@
+data class User(
+    var fname: String? = null,
+    var lname: String? = null,
+    var username: String? = null,
+    var password: String? = null
+) {
+    @PrimaryKey(autoGenerate = true)
+    var userId: Int = 0
+}
+
+
+data class Student(
+    var fullName: String? = null,
+    var age: Int? = null,
+    var gender: String? = null,
+    var address: String? = null
+) : Parcelable{
+    @PrimaryKey(autoGenerate = true)
+    var stdId: Int = 0
